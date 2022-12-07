@@ -6,7 +6,7 @@ with open("day4-input.csv") as f:
 
 
 def is_inside(smaller, bigger) -> bool:
-    """ check to see if smaller is inside bigger"""
+    """check to see if smaller is inside bigger"""
     return smaller[0] >= bigger[0] and bigger[1] >= smaller[1]
 
 

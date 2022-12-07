@@ -77,7 +77,5 @@ required_to_free = REQUIRED_DISK - available_disk
 folders_large_enough = [val for val in FLAT_FOLDERS.values() if val > required_to_free]
 folders_large_enough.sort()
 print(folders_large_enough[0])
-folder_name = list(FLAT_FOLDERS.keys())[
-    list(FLAT_FOLDERS.values()).index(folders_large_enough[0])
-]
+folder_name = list(FLAT_FOLDERS.keys())[list(FLAT_FOLDERS.values()).index(folders_large_enough[0])]
 print(folder_name)

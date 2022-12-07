@@ -7,9 +7,7 @@ def process_initial(lines: list[str]) -> dict[str, list]:
     """dynamically build the initial layout"""
     lines.reverse()
     data = defaultdict(list)
-    index = {
-        idx: character for idx, character in enumerate(lines[0]) if character != " "
-    }
+    index = {idx: character for idx, character in enumerate(lines[0]) if character != " "}
 
     for line in lines[1:]:
         for idx, name in index.items():
