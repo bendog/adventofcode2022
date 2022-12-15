@@ -54,7 +54,7 @@ class Tree:
         return score_left * score_right * score_up * score_down
 
 
-# import data
+# import input
 with open("day8-input.txt") as f:
     rows = [[int(x) for x in list(row.replace("\n", ""))] for row in f]
     cols = [[] for _ in rows[0]]

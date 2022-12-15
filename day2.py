@@ -63,7 +63,7 @@ class Game:
         return self.response.points + self.victory_points[self.victory]
 
 
-# import data
+# import input
 with open("day2-input.txt") as f:
     games = [Game(*line.split()) for line in f]
 
